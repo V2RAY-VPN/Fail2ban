@@ -2,7 +2,6 @@ clear
 #CheckIfRoot
 [ $(id -u) != "0" ] && { echo "${CFAILURE}Error: You must be root to run this script${CEND}"; exit 1; }
 
-
 #ReadSSHPort
 [ -z "`grep ^Port /etc/ssh/sshd_config`" ] && ssh_port=22 || ssh_port=`grep ^Port /etc/ssh/sshd_config | awk '{print $2}'`
 
@@ -171,9 +170,6 @@ if [[ ${OS} =~ ^Ubuntu$|^Debian$ ]]; then
   service ssh restart
 fi
 echo ""
-echo 'Telegram Group: https://t.me/functionclub'
-echo 'Google Puls: https://plus.google.com/communities/113154644036958487268'
-echo 'Github: https://github.com/FunctionClub'
-echo 'QQ Group:277717865'
+echo 'Telegram Group: https://t.me/vpnv2ray'
 
 echo "Fail2ban is now runing on this server now!"
