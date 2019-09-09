@@ -58,3 +58,4 @@ if [ ${OS} == Ubuntu ] || [ ${OS} == Debian ];then
 fi
 
 rm -rf /etc/fail2ban
+
